@@ -1,18 +1,18 @@
-# AI-Powered Interview Preparation Platform
+# 🚀 AI-Powered Interview Preparation Platform
 
 A modern web application that helps users prepare for technical interviews through AI-powered mock interviews with voice interaction capabilities.
 
-## Features
+## ✨ Features
 
-- **Interactive Voice Interviews**: Conduct realistic interview simulations with an AI interviewer using natural voice conversations
-- **Multiple Interview Types**: Support for technical, behavioral, and mixed interview formats
-- **Tech Stack Customization**: Choose from a wide range of technologies and frameworks for technical interviews
-- **Real-time Feedback**: Get immediate feedback and assessments after each interview session
-- **Interview History**: Track your progress with a comprehensive history of past interviews
-- **Authentication**: Secure user authentication system with customizable profiles
-- **Responsive Design**: Fully responsive interface that works across all devices
+- **🎙️ Interactive Voice Interviews**: Conduct realistic interview simulations with an AI interviewer using natural voice conversations
+- **🛠️ Multiple Interview Types**: Support for technical, behavioral, and mixed interview formats
+- **⚙️ Tech Stack Customization**: Choose from a wide range of technologies and frameworks for technical interviews
+- **📊 Real-time Feedback**: Get immediate feedback and assessments after each interview session
+- **📜 Interview History**: Track your progress with a comprehensive history of past interviews
+- **🔒 Authentication**: Secure user authentication system with customizable profiles
+- **📱 Responsive Design**: Fully responsive interface that works across all devices
 
-## Tech Stack
+## 🛠️ Tech Stack
 
 ### Frontend
 
@@ -25,9 +25,7 @@ A modern web application that helps users prepare for technical interviews throu
 
 - Firebase Authentication
 - Firebase Cloud Firestore
-- OpenAI GPT-4 for interview intelligence
-- ElevenLabs for voice synthesis
-- Deepgram for speech-to-text
+- Google Generative AI API
 
 ### Development Tools
 
@@ -35,7 +33,7 @@ A modern web application that helps users prepare for technical interviews throu
 - Prettier
 - Firebase Admin SDK
 
-## Getting Started
+## 🚀 Getting Started
 
 1. Clone the repository:
 
@@ -60,12 +58,13 @@ NEXT_PUBLIC_FIREBASE_PROJECT_ID=
 NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=
 NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=
 NEXT_PUBLIC_FIREBASE_APP_ID=
-FIREBASE_ADMIN_PROJECT_ID=
-FIREBASE_ADMIN_CLIENT_EMAIL=
-FIREBASE_ADMIN_PRIVATE_KEY=
-OPENAI_API_KEY=
-ELEVENLABS_API_KEY=
-DEEPGRAM_API_KEY=
+FIREBASE_PROJECT_ID=
+FIREBASE_CLIENT_EMAIL=
+FIREBASE_PRIVATE_KEY=
+GOOGLE_GENERATIVE_AI_API_KEY=
+NEXT_PUBLIC_VAPI_WEB_TOKEN=
+NEXT_PUBLIC_VAPI_WORKFLOW_ID=
+NEXT_PUBLIC_BASE_URL=
 ```
 
 4. Run the development server:
@@ -76,29 +75,29 @@ npm run dev
 
 5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Features in Detail
+## 🌟 Features in Detail
 
-### AI Interviewer
+### 🤖 AI Interviewer
 
 - Natural language processing for dynamic conversations
 - Voice synthesis for realistic interview experience
 - Real-time speech recognition
 - Context-aware follow-up questions
 
-### Interview Types
+### 🧑‍💻 Interview Types
 
 - Technical interviews with language/framework-specific questions
 - Behavioral interviews focusing on soft skills
 - Mixed format interviews combining both aspects
 
-### User Dashboard
+### 📊 User Dashboard
 
 - Track interview history
 - View detailed feedback and assessments
 - Monitor progress over time
 - Customize interview preferences
 
-## Contributing
+## 🤝 Contributing
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/amazing-feature`)
@@ -106,14 +105,11 @@ npm run dev
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## License
+## 📜 License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Acknowledgments
+## 🙏 Acknowledgments
 
-- OpenAI for GPT-4 API
-- ElevenLabs for voice synthesis
-- Deepgram for speech recognition
 - Firebase for backend services
 - Vercel for hosting and deployment
