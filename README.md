@@ -1,36 +1,119 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# AI-Powered Interview Preparation Platform
+
+A modern web application that helps users prepare for technical interviews through AI-powered mock interviews with voice interaction capabilities.
+
+## Features
+
+- **Interactive Voice Interviews**: Conduct realistic interview simulations with an AI interviewer using natural voice conversations
+- **Multiple Interview Types**: Support for technical, behavioral, and mixed interview formats
+- **Tech Stack Customization**: Choose from a wide range of technologies and frameworks for technical interviews
+- **Real-time Feedback**: Get immediate feedback and assessments after each interview session
+- **Interview History**: Track your progress with a comprehensive history of past interviews
+- **Authentication**: Secure user authentication system with customizable profiles
+- **Responsive Design**: Fully responsive interface that works across all devices
+
+## Tech Stack
+
+### Frontend
+
+- Next.js 13+ with App Router
+- TypeScript
+- Tailwind CSS
+- Shadcn/UI Components
+
+### Backend & APIs
+
+- Firebase Authentication
+- Firebase Cloud Firestore
+- OpenAI GPT-4 for interview intelligence
+- ElevenLabs for voice synthesis
+- Deepgram for speech-to-text
+
+### Development Tools
+
+- ESLint
+- Prettier
+- Firebase Admin SDK
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository:
+
+```bash
+git clone <repository-url>
+cd interwiew-prep
+```
+
+2. Install dependencies:
+
+```bash
+npm install
+```
+
+3. Set up environment variables:
+   Create a `.env.local` file with the following variables:
+
+```
+NEXT_PUBLIC_FIREBASE_API_KEY=
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=
+NEXT_PUBLIC_FIREBASE_APP_ID=
+FIREBASE_ADMIN_PROJECT_ID=
+FIREBASE_ADMIN_CLIENT_EMAIL=
+FIREBASE_ADMIN_PRIVATE_KEY=
+OPENAI_API_KEY=
+ELEVENLABS_API_KEY=
+DEEPGRAM_API_KEY=
+```
+
+4. Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Features in Detail
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### AI Interviewer
 
-## Learn More
+- Natural language processing for dynamic conversations
+- Voice synthesis for realistic interview experience
+- Real-time speech recognition
+- Context-aware follow-up questions
 
-To learn more about Next.js, take a look at the following resources:
+### Interview Types
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Technical interviews with language/framework-specific questions
+- Behavioral interviews focusing on soft skills
+- Mixed format interviews combining both aspects
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### User Dashboard
 
-## Deploy on Vercel
+- Track interview history
+- View detailed feedback and assessments
+- Monitor progress over time
+- Customize interview preferences
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- OpenAI for GPT-4 API
+- ElevenLabs for voice synthesis
+- Deepgram for speech recognition
+- Firebase for backend services
+- Vercel for hosting and deployment
