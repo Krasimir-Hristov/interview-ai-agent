@@ -64,7 +64,7 @@ const AuthForm = ({ type }: { type: FormType }) => {
           return;
         }
 
-        toast.success('Konto erfolgreich erstellt. Bitte melden Sie sich an.');
+        toast.success('Account created successfully. Please sign in.');
         router.push('/sign-in');
       } else {
         const { email, password } = data;
@@ -77,9 +77,7 @@ const AuthForm = ({ type }: { type: FormType }) => {
 
         const idToken = await userCredential.user.getIdToken();
         if (!idToken) {
-          toast.error(
-            'Anmeldung fehlgeschlagen. Bitte versuchen Sie es erneut.'
-          );
+          toast.error('Sign in Failed. Please try again.');
           return;
         }
 
@@ -88,12 +86,12 @@ const AuthForm = ({ type }: { type: FormType }) => {
           idToken,
         });
 
-        toast.success('Erfolgreich angemeldet.');
+        toast.success('Signed in successfully.');
         router.push('/');
       }
     } catch (error) {
       console.log(error);
-      toast.error(`Es ist ein Fehler aufgetreten: ${error}`);
+      toast.error(`There was an error: ${error}`);
     }
   };
 
@@ -104,10 +102,10 @@ const AuthForm = ({ type }: { type: FormType }) => {
       <div className='flex flex-col gap-6 card py-14 px-10'>
         <div className='flex flex-row gap-2 justify-center'>
           <Image src='/logo.svg' alt='logo' height={32} width={38} />
-          <h2 className='text-primary-100'>RecruiTech</h2>
+          <h2 className='text-primary-100'>PrepWise</h2>
         </div>
 
-        <h3>Üben Sie Vorstellungsgespräche mit KI</h3>
+        <h3>Practice job interviews with AI</h3>
 
         <Form {...form}>
           <form
@@ -119,7 +117,7 @@ const AuthForm = ({ type }: { type: FormType }) => {
                 control={form.control}
                 name='name'
                 label='Name'
-                placeholder='Ihr Name'
+                placeholder='Your Name'
                 type='text'
               />
             )}
@@ -128,31 +126,31 @@ const AuthForm = ({ type }: { type: FormType }) => {
               control={form.control}
               name='email'
               label='Email'
-              placeholder='Ihre E-Mail-Adresse'
+              placeholder='Your email address'
               type='email'
             />
 
             <FormField
               control={form.control}
               name='password'
-              label='Passwort'
-              placeholder='Geben Sie Ihr Passwort ein'
+              label='Password'
+              placeholder='Enter your password'
               type='password'
             />
 
             <Button className='btn' type='submit'>
-              {isSignIn ? 'Anmelden' : 'Konto erstellen'}
+              {isSignIn ? 'Sign In' : 'Create an Account'}
             </Button>
           </form>
         </Form>
 
         <p className='text-center'>
-          {isSignIn ? 'Noch kein Konto?' : 'Haben Sie bereits ein Konto?'}
+          {isSignIn ? 'No account yet?' : 'Have an account already?'}
           <Link
             href={!isSignIn ? '/sign-in' : '/sign-up'}
             className='font-bold text-user-primary ml-1'
           >
-            {!isSignIn ? 'Anmelden' : 'Registrieren'}
+            {!isSignIn ? 'Sign In' : 'Sign Up'}
           </Link>
         </p>
       </div>

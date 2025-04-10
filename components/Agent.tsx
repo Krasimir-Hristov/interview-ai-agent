@@ -144,7 +144,7 @@ const Agent = ({
             />
             {isSpeaking && <span className='animate-speak' />}
           </div>
-          <h3>KI-Interviewer</h3>
+          <h3>AI Interviewer</h3>
         </div>
 
         <div className='card-border'>
@@ -190,7 +190,7 @@ const Agent = ({
           </button>
         ) : (
           <button className='btn-disconnect' onClick={handleDisconnect}>
-            Ende
+            End
           </button>
         )}
       </div>

@@ -24,12 +24,12 @@ const Page = async () => {
     <>
       <section className='card-cta'>
         <div className='flex flex-col gap-6 max-w-lg'>
-          <h2>Werde interviewbereit mit KI-gestützter Übung & Feedback</h2>
+          <h2>Get Interview-Ready with AI-Powered Practice & Feedback</h2>
           <p className='text-lg'>
-            Übe mit echten Interviewfragen & erhalte sofortiges Feedback
+            Practice on Real Interview questions & get Instant Feedback
           </p>
           <Button asChild className='btn-primary max-sm:w-full'>
-            <Link href='/interview'>Interview starten</Link>
+            <Link href='/interview'>Start an Interview</Link>
           </Button>
         </div>
 
@@ -43,7 +43,7 @@ const Page = async () => {
       </section>
 
       <section className='flex flex-col gap-6 mt-8'>
-        <h2>Deine Interviews</h2>
+        <h2>Your Interviews</h2>
 
         <div className='interviews-section'>
           {hasPastInterviews ? (
@@ -51,13 +51,13 @@ const Page = async () => {
               <InterviewCard {...interview} key={interview.id} />
             ))
           ) : (
-            <p>Sie haben noch keine Interviews durchgeführt</p>
+            <p>You haven&apos;t taken any interviews yet</p>
           )}
         </div>
       </section>
 
       <section className='flex flex-col gap-6 mt-8'>
-        <h2>Ein Interview durchführen</h2>
+        <h2>Take an Interview</h2>
 
         <div className='interviews-section'>
           {hasUpcomingInterviews ? (
@@ -65,7 +65,7 @@ const Page = async () => {
               <InterviewCard {...interview} key={interview.id} />
             ))
           ) : (
-            <p>Es sind keine neuen Interviews verfügbar</p>
+            <p>There are no new interviews available</p>
           )}
         </div>
       </section>
